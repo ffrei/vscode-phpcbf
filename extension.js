@@ -110,6 +110,10 @@ class PHPCBF {
             standard = this.standard;
         }
 
+        if (standard.includes("${workspaceFolder}")) {
+            standard = standard.replace("${workspaceFolder}", workspaceRoot);
+        }
+
         return standard;
     }
 

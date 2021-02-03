@@ -2,34 +2,38 @@
     "name": "vscode-phpcbf",
     "displayName": "phpcbf",
     "description": "PHP Code Beautifier and Fixer",
-    "version": "0.0.8",
-    "publisher": "persoderlind",
-    "homepage": "https://github.com/soderlind/vscode-phpcbf",
+    "version": "0.0.9",
+    "publisher": "hexaki",
+    "homepage": "https://github.com/ffrei/vscode-phpcbf",
     "icon": "images/logo.png",
     "license": "SEE LICENSE IN LICENSE.txt",
     "repository": {
         "type": "git",
-        "url": "https://github.com/soderlind/vscode-phpcbf.git"
+        "url": "https://github.com/ffrei/vscode-phpcbf.git"
     },
     "engines": {
-        "vscode": "^1.19.0"
+        "vscode": "^1.34.0"
     },
     "categories": [
         "Formatters",
         "Linters",
         "Other"
     ],
-    "keywords": ["multi-root ready"],
+    "keywords": [
+        "multi-root ready"
+    ],
     "activationEvents": [
         "onLanguage:php"
     ],
     "main": "./extension",
     "contributes": {
-        "commands": [{
-            "command": "phpcbf-soderlind",
-            "title": "PHP Code Beautifier and Fixer: Fix this file",
-            "when": "!inOutput && editorFocus && editorLangId == php"
-        }],
+        "commands": [
+            {
+                "command": "phpcbf-soderlind",
+                "title": "PHP Code Beautifier and Fixer: Fix this file",
+                "when": "!inOutput && editorFocus && editorLangId == php"
+            }
+        ],
         "configuration": {
             "title": "PHP Code Beautifier and Fixer Configuration options",
             "type": "object",

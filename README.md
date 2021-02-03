@@ -1,3 +1,14 @@
+# This is a fork
+
+This fork has been created due to missing maintenance.
+
+Original project : 
+https://github.com/soderlind/vscode-phpcbf
+
+Added feature : 
+ - accepting variables in `phpcbf.standard` setting
+
+
 # PHP Code Beautifier and Fixer for Visual Studio Code
 
 This extension provides the PHP Code Beautifier and Fixer (`phpcbf`) command for Visual Studio Code.
